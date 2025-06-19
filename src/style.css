@@ -58,7 +58,6 @@ button:focus-visible {
 }
 
 #app {
-  max-width: 1280px;
   margin: 0 auto;
   text-align: center;
 }
@@ -74,4 +73,13 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+.icon{
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+}
+
+.icon :hover {
+  filter: brightness(0) saturate(100%) invert(76%) sepia(30%) saturate(1000%) hue-rotate(332deg) brightness(101%) contrast(101%);
 }

@@ -17,12 +17,11 @@ const onclick = () => {
 </script>
 
 <template>
-  <div class = "highlight button" v-on:click="onclick">
+  <div class = "highlight button icon" v-on:click="onclick">
     <div v-if="isActive" class ="active bar">
     </div>
     <div style="align-content: center; text-align: center;" class = "sbbutton" :class="{active:isActive}">
-      <slot v-if="isActive" name = "icon_active">empty</slot>
-      <slot v-else name="icon_default">n-empty</slot>
+      <slot name = "icon">empty</slot>
       <br>
       <slot name = "title">name</slot>
     </div>
